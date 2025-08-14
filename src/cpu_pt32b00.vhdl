@@ -33,9 +33,9 @@ end entity;
 architecture rtl of cpu_pt32b00 is
 
     -- Constants
-    constant CACHE_LINE_DEPTH : natural := 64;       -- bytes per cache line
-    constant NUMBER_SETS : natural := 0;             -- number of sets
-    constant CACHE_LINES_PER_SET : natural := 1;     -- associative lines in every set
+    constant CACHE_LINE_DEPTH : natural := 64;      -- bytes per cache line
+    constant NUMBER_SETS : natural := 64;           -- number of sets
+    constant CACHE_LINES_PER_SET : natural := 4;    -- associative lines in every set
 
     -- Registers
     signal reg_calculated_address : unsigned(31 downto 0);

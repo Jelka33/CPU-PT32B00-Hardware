@@ -1,0 +1,73 @@
+# Loading project tb_cache
+# reading /home/milan/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project tb_sdram_controller
+# Errors: 3, Warnings: 0
+# Errors: 0, Warnings: 1
+# Compile of sdram_controller.vhdl was successful.
+# Errors: 3, Warnings: 0
+# Errors: 3, Warnings: 0
+# Compile of tb_sdram_controller.vhdl failed.
+# Compile of tb_sdram_controller.vhdl was successful.
+# Compile of sdram_controller.vhdl was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Compile of tb_sdram_controller.vhdl was successful.
+# Compile of sdram_controller.vhdl failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of tb_sdram_controller.vhdl was successful.
+# Compile of sdram_controller.vhdl failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of tb_sdram_controller.vhdl was successful.
+# Compile of sdram_controller.vhdl was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+vsim work.tb_sdram_controller(behavioural)
+# vsim work.tb_sdram_controller(behavioural) 
+# Start time: 21:41:40 on Aug 07,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sdram_controller_pkg(body)
+# Loading work.tb_sdram_controller(behavioural)
+# Loading work.sdram_controller(rtl)
+add wave -position end  sim:/tb_sdram_controller/dut1/i_clk
+add wave -position end  sim:/tb_sdram_controller/dut1/i_reset
+add wave -position end  sim:/tb_sdram_controller/dut1/i_address
+add wave -position end  sim:/tb_sdram_controller/dut1/i_request
+add wave -position end  sim:/tb_sdram_controller/dut1/i_write_data
+add wave -position end  sim:/tb_sdram_controller/dut1/i_write_en
+add wave -position end  sim:/tb_sdram_controller/dut1/o_data
+add wave -position end  sim:/tb_sdram_controller/dut1/o_ready
+add wave -position end  sim:/tb_sdram_controller/dut1/o_address
+add wave -position end  sim:/tb_sdram_controller/dut1/o_bank
+add wave -position end  sim:/tb_sdram_controller/dut1/o_cs_n
+add wave -position end  sim:/tb_sdram_controller/dut1/o_cas_n
+add wave -position end  sim:/tb_sdram_controller/dut1/o_ras_n
+add wave -position end  sim:/tb_sdram_controller/dut1/o_we_n
+add wave -position end  sim:/tb_sdram_controller/dut1/o_cke
+add wave -position end  sim:/tb_sdram_controller/dut1/o_dqm_n
+add wave -position end  sim:/tb_sdram_controller/dut1/io_data
+add wave -position end  sim:/tb_sdram_controller/dut1/s_controller
+add wave -position end  sim:/tb_sdram_controller/dut1/refresh_counter_reg
+add wave -position end  sim:/tb_sdram_controller/dut1/refresh_counter_en_reg
+add wave -position end  sim:/tb_sdram_controller/dut1/refresh_counter_c_reg
+add wave -position end  sim:/tb_sdram_controller/dut1/cmd_time_counter_reg
+add wave -position end  sim:/tb_sdram_controller/dut1/read_data_en_reg
+add wave -position 22  sim:/tb_sdram_controller/dut1/refresh_counter_c
+add wave -position end  sim:/tb_sdram_controller/dut1/cmd_time_counter_c
+add wave -position end  sim:/tb_sdram_controller/dut1/command_out
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_NOP
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_READ
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_WRITE
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_ACTIVATE
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_PRECHARGE
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_AUTO_REFRESH
+add wave -position end  sim:/tb_sdram_controller/dut1/CMD_MODE_REG_SET
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sdram_controller/dut1
+# ** Failure: Simulation Ended
+#    Time: 915 ns  Iteration: 0  Process: /tb_sdram_controller/stimuli File: /home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_sdram_controller.vhdl
+# Break in Process stimuli at /home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_sdram_controller.vhdl line 118
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/milan/cpu_pt32b00/hardware/sim/modelsim_projects/tb_sdram_controller/wave.do
+# End time: 23:16:22 on Aug 07,2025, Elapsed time: 1:34:42
+# Errors: 1, Warnings: 10

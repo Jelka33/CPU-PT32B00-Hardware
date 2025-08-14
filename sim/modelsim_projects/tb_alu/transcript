@@ -1,0 +1,23 @@
+# Loading project tb_alu
+# reading /home/milan/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project tb_cache
+# Compile of cpu_pt32b00_package.vhdl was successful.
+# Compile of instruction_cache_memory.vhdl was successful.
+# Compile of cache_controller.vhdl failed with 6 errors.
+# Compile of tb_cache.vhdl was successful with warnings.
+# 4 compiles, 1 failed with 6 errors.
+# Compile of cpu_pt32b00_package.vhdl was successful.
+# Compile of instruction_cache_memory.vhdl was successful.
+# Compile of cache_controller.vhdl failed with 1 errors.
+# Compile of tb_cache.vhdl was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of cpu_pt32b00_package.vhdl was successful.
+# Compile of instruction_cache_memory.vhdl was successful.
+# Compile of cache_controller.vhdl failed with 1 errors.
+# Compile of tb_cache.vhdl was successful.
+# 4 compiles, 1 failed with 1 error.
+# Compile of cpu_pt32b00_package.vhdl was successful.
+# Compile of instruction_cache_memory.vhdl was successful.
+# Compile of cache_controller.vhdl was successful.
+# Compile of tb_cache.vhdl was successful.
+# 4 compiles, 0 failed with no errors.

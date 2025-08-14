@@ -1,0 +1,238 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/milan/cpu_pt32b00/hardware/sim/modelsim_projects/tb_alu
+Ecache_controller
+Z0 w1754401471
+Z1 DPx4 work 19 cpu_pt32b00_package 0 22 GL_K><P=7NX?5D3bbN_Mb1
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 202
+Z5 d/home/milan/cpu_pt32b00/hardware/sim/modelsim_projects/tb_cache
+Z6 8/home/milan/cpu_pt32b00/hardware/src/cache_controller.vhdl
+Z7 F/home/milan/cpu_pt32b00/hardware/src/cache_controller.vhdl
+l0
+L7 1
+VeHUGIn;DMNeNgZW6RbgI31
+!s100 ia45dFc[kInkAM@njC6cR3
+Z8 OV;C;2020.1;71
+33
+Z9 !s110 1754402796
+!i10b 1
+Z10 !s108 1754402796.000000
+Z11 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/milan/cpu_pt32b00/hardware/src/cache_controller.vhdl|
+Z12 !s107 /home/milan/cpu_pt32b00/hardware/src/cache_controller.vhdl|
+!i113 1
+Z13 o-work work -2008 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+R4
+Z15 DEx4 work 16 cache_controller 0 22 eHUGIn;DMNeNgZW6RbgI31
+!i122 202
+l141
+L54 583
+VgAno:EHEK?F1ZdFhj:_@J1
+!s100 HJ3HC_R>JDk_TWX4mE]5B2
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pcpu_pt32b00_package
+R2
+R3
+R4
+!i122 199
+Z16 w1754248657
+R5
+Z17 8/home/milan/cpu_pt32b00/hardware/src/cpu_pt32b00_package.vhdl
+Z18 F/home/milan/cpu_pt32b00/hardware/src/cpu_pt32b00_package.vhdl
+l0
+L5 1
+VGL_K><P=7NX?5D3bbN_Mb1
+!s100 U8B]1;Kf7XRmkizFlV;Yi2
+R8
+33
+b1
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/milan/cpu_pt32b00/hardware/src/cpu_pt32b00_package.vhdl|
+Z20 !s107 /home/milan/cpu_pt32b00/hardware/src/cpu_pt32b00_package.vhdl|
+!i113 1
+R13
+R14
+Bbody
+R1
+R2
+R3
+R4
+!i122 199
+l0
+L115 1
+V917g;DF75]l]23ZJKjI2^2
+!s100 Z>7Hmb8B3@aUYZh=9cV^92
+R8
+33
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Edata_cache_memory
+Z21 w1754402792
+R1
+R2
+R3
+R4
+!i122 201
+R5
+Z22 8/home/milan/cpu_pt32b00/hardware/src/data_cache_memory.vhdl
+Z23 F/home/milan/cpu_pt32b00/hardware/src/data_cache_memory.vhdl
+l0
+L7 1
+VlbM`7RCZ0b:9LYWP[M7Le1
+!s100 ^o3Fklngf=kAkT=4jF2=F1
+R8
+33
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/milan/cpu_pt32b00/hardware/src/data_cache_memory.vhdl|
+Z25 !s107 /home/milan/cpu_pt32b00/hardware/src/data_cache_memory.vhdl|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z26 DEx4 work 17 data_cache_memory 0 22 lbM`7RCZ0b:9LYWP[M7Le1
+!i122 201
+l77
+L28 189
+Vgojeb7fUKDiWWk^X7Xd8?0
+!s100 CmH>`^f]RO[S32B5X<R`23
+R8
+33
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Einstruction_cache_memory
+R16
+R1
+R2
+R3
+R4
+!i122 200
+R5
+Z27 8/home/milan/cpu_pt32b00/hardware/src/instruction_cache_memory.vhdl
+Z28 F/home/milan/cpu_pt32b00/hardware/src/instruction_cache_memory.vhdl
+l0
+L7 1
+V97_IlWVV2lH6_?7J=>zeJ1
+!s100 S?D]]C:<:lZ9c>`?f2zZP3
+R8
+33
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/milan/cpu_pt32b00/hardware/src/instruction_cache_memory.vhdl|
+Z30 !s107 /home/milan/cpu_pt32b00/hardware/src/instruction_cache_memory.vhdl|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z31 DEx4 work 24 instruction_cache_memory 0 22 97_IlWVV2lH6_?7J=>zeJ1
+!i122 200
+l55
+L28 49
+VE7X0Z^Z0B<Ela6U30j[jG1
+!s100 N=VYCMi3]4@UJPLbM]S;L0
+R8
+33
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Etb_cache
+Z32 w1754400616
+R1
+R2
+R3
+R4
+!i122 203
+R5
+Z33 8/home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_cache.vhdl
+Z34 F/home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_cache.vhdl
+l0
+L7 1
+VBCb^eN3Z0h7kVVGOma7=30
+!s100 GNHWCj1`5UKH6_>PSQf583
+R8
+33
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_cache.vhdl|
+Z36 !s107 /home/milan/cpu_pt32b00/hardware/sim/testbenches/tb_cache.vhdl|
+!i113 1
+R13
+R14
+Abehavioural
+R26
+R31
+R15
+R1
+R2
+R3
+R4
+Z37 DEx4 work 8 tb_cache 0 22 BCb^eN3Z0h7kVVGOma7=30
+!i122 203
+l71
+Z38 L10 723
+Z39 VR22cLO^]CO4?Gb2hJ^XYB3
+Z40 !s100 M:XYZl_FNgFJPn5@=1X7;2
+R8
+33
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14

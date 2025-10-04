@@ -61,8 +61,10 @@ begin
     or_result <= i_a_operand or i_b_operand;
     xor_result <= i_a_operand xor i_b_operand;
 
-    shr_result(30 downto 0) <= shift_right(i_a_operand, to_integer(i_b_operand))(30 downto 0);
-    shr_result(31) <= i_a_operand(31) when i_operation = ALU_OP_SHAR else '0';
+    -- if the alu operation is SHAR perform an arithmetic right shift, else a logical
+    shr_result <= unsigned(shift_right(signed(i_a_operand), to_integer(i_b_operand))) when
+                    i_operation = ALU_OP_SHAR else
+                    shift_right(i_a_operand, to_integer(i_b_operand));
 
     prs_seq : process (i_clk)
     begin

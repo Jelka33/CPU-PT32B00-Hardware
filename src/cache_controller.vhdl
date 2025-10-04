@@ -539,11 +539,6 @@ begin
             when RESET =>
                 reset_counter_reg_next <= reset_counter_reg + 1;
 
-                cache_address_r_out(
-                    cache_address_r_out'length-1 downto f_log2(CACHE_LINE_DEPTH)
-                ) <= std_logic_vector(reset_counter_reg_next);
-                cache_address_r_out(f_log2(CACHE_LINE_DEPTH)-1 downto 0) <= (others => '0');
-
                 cache_address_w_out(
                     cache_address_w_out'length-1 downto f_log2(CACHE_LINE_DEPTH)
                 ) <= std_logic_vector(reset_counter_reg);

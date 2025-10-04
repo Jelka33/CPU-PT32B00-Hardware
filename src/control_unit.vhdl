@@ -80,6 +80,9 @@ architecture rtl of control_unit is
     signal reg_special_regs : t_special_regs;
     signal reg_special_regs_next : t_special_regs;
 
+    signal reg_cr2_write_lock : std_logic;
+    signal reg_cr2_write_lock_next : std_logic;
+
     signal reg_int_irq : std_logic;
     signal reg_int_irq_next : std_logic;
 
@@ -191,6 +194,8 @@ begin
 
             reg_special_regs <= (others => (others => '0'));
 
+            reg_cr2_write_lock <= '0';
+
             reg_int_irq <= '0';
             reg_int_num <= (others => '0');
             reg_int_execution_en <= '0';
@@ -214,6 +219,8 @@ begin
             reg_fetch_by_load <= reg_fetch_by_load_next;
 
             reg_special_regs <= reg_special_regs_next;
+
+            reg_cr2_write_lock <= reg_cr2_write_lock_next;
 
             reg_int_irq <= reg_int_irq_next;
             reg_int_num <= reg_int_num_next;
@@ -452,6 +459,22 @@ begin
             reg_special_regs_next(REGISTER_FLAGS_I-16)(4) <= '0';
         else
             reg_special_regs_next(REGISTER_FLAGS_I-16)(4) <= '1';
+        end if;
+
+        -- set the CR2 address to the last accessed one as long as no lock is set
+        if reg_cr2_write_lock = '0' and memory_request = '1' then
+            reg_special_regs_next(REGISTER_CR2_I-16) <= address_out;
+        end if;
+
+        -- in case of a page fault, read the flags from the memory manager and lock CR2 address
+        if i_page_fault = '1' then
+            reg_special_regs_next(REGISTER_CR3_I-16)(3 downto 0) <= i_data(3 downto 0);
+            reg_cr2_write_lock_next <= '1';
+        end if;
+
+        -- remove the CR2 address lock after the Page Fault is serviced
+        if reg_int_num = INTNUM_PAGE_FAULT and finished_int_execution = '1' then
+            reg_cr2_write_lock_next <= '0';
         end if;
     end process;
 
